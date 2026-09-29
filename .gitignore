@@ -1,0 +1,43 @@
+# ===== 本地工具状态目录（会话级生成，勿提交）=====
+.mimosa/
+.video_agent/
+.zcode/
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# ===== Node（如适用）=====
+node_modules/
+
+# ===== 系统垃圾文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 临时 / 演示文件 =====
+*.tmp
+*.bak
+*.orig
+*.rej
+*.log
+~$*
+_demo_*
+demo_*
+sample_*
+tmp_*
+
+# ===== 敏感文件兜底（禁止入库）=====
+*.pem
+*.key
+.env
+.env.*
+credentials*.json

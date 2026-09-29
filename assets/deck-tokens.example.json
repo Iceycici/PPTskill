@@ -1,0 +1,39 @@
+{
+  "_说明": "深蓝学术风设计令牌示例。使用时把值填进 assets/lib-template.js 顶部令牌区；本 JSON 是令牌的机器可读快照，供换主题时对照与评审。",
+  "_出处": "2026-09-17 zcode 会话 69 页中文教学课件《AI提示词工程：从新手到高手》定稿值",
+
+  "canvas": { "layout": "LAYOUT_WIDE", "width_in": 13.33, "height_in": 7.5 },
+  "font": { "family": "微软雅黑", "size_body_pt": 12, "size_title_pt": 28, "size_kicker_pt": 12.5, "size_floor_pt": 11.5 },
+
+  "colors": {
+    "navy": "0E2A47", "navy2": "16395C",
+    "ink": "1C3D5A", "body": "3A5570",
+    "muted": "8296AB", "faint": "B9C6D4",
+    "line": "D8E1EA", "tint": "F1F5F9", "paper": "FFFFFF",
+    "onDark": "FFFFFF", "onDarkMuted": "AFC2D6",
+    "gold": "E9A13B",
+    "good": "12805C", "goodT": "E7F3EE",
+    "bad": "B4443C", "badT": "FBEAE8"
+  },
+
+  "part_colors": {
+    "1": { "color": "1D6FB8", "tint": "EAF3FA", "dark": "155587", "label": "第一篇 · <篇章名>" },
+    "2": { "color": "12805C", "tint": "E7F3EE", "dark": "0E6B4C", "label": "第二篇 · <篇章名>" },
+    "3": { "color": "C05621", "tint": "FBEDE2", "dark": "A34518", "label": "第三篇 · <篇章名>" }
+  },
+
+  "layout_constants": {
+    "margin_x_in": 0.62,
+    "title_y_in": 0.62,
+    "body_top_in": 1.5,
+    "footer": { "text": "AI提示词工程 · 从新手到高手", "x_in": 0.62, "y_in": 7.12, "must_be_unique": true },
+    "page_number": { "x_in": 12.35, "y_in": 7.12, "align": "right", "must_equal_slide_index": true }
+  },
+
+  "rules": [
+    "颜色只从令牌取，页面代码禁写裸色值",
+    "每页一个视觉焦点；正文下限 11.5pt；单卡要点 ≤5 条",
+    "kicker 全篇同一分隔符体系；连接号全篇同一形态",
+    "模板卡/金句为引用语料，逐字保留"
+  ]
+}

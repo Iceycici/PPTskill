@@ -1,0 +1,38 @@
+{
+  "_说明": "verify_deck.py 的规则格式（质检第一闸门）。各项均可按项目裁剪；whitelist 用于豁免合法残留（如提示词例句中的专名）。",
+  "_出处": "检查项设计取自 2026-09-17 zcode 会话 verify_v4.py / verify_final.py 合并泛化",
+
+  "expect_slides": 69,
+
+  "residuals": [
+    { "page": 2,  "old": "理解  新手与" },
+    { "page": 5,  "old": "复杂任务要求" },
+    { "page": 22, "old": "某个擅长写作" },
+    { "page": 68, "old": "标注 / 编造" }
+  ],
+
+  "banned": ["13 道", "13 题", "12 类高频场景", "12 个场景", "（13"],
+  "whitelist": [
+    { "page": 44, "allow": ["头脑风暴会议", "芋泥奶茶"] },
+    { "page": 45, "allow": ["简单推理"] }
+  ],
+
+  "number_scans": [
+    { "regex": "场景\\s*(\\d+)", "max": 8,  "name": "场景号" },
+    { "regex": "练习\\s*(\\d+)", "max": 9,  "name": "练习号" }
+  ],
+
+  "kickers": [
+    { "regex": "第二篇 · 场景 (\\d+)", "expect": [1, 2, 3, 4, 5, 6, 7, 8] },
+    { "regex": "第三篇 · 练习 (\\d+)", "expect": [1, 2, 3, 4, 5, 6, 7, 8, 9] }
+  ],
+
+  "footer": "AI提示词工程",
+  "check_page_numbers": true,
+
+  "must_contain": [
+    { "page": 35, "text": "请扮演严格编辑" },
+    { "page": 45, "text": "请提取图片中的所有可见文字" },
+    { "page": 52, "text": "Generate a [应用类型]" }
+  ]
+}
